@@ -171,6 +171,37 @@ header {
     text-align:justify;
     justify-content: center;
 
+<<<<<<< HEAD
+}
+
+#about {
+    padding: 2em;
+    background: #3ABEF9;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    display: inline;
+    margin: 0 1em;
 }
 
 #about {
@@ -215,3 +246,14 @@ header {
     font-size: 1.2em;
 }
 
+#about ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#about p a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
