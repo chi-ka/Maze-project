@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+CTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    title>Raycasting Portfolio Project</title>
+    <title>Raycasting Portfolio Project</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -15,51 +16,65 @@
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
+        <section id="intro">
+            <div id ="words" >
+              <h1 class="title"> MAZE </h1>
+              <h1>Raycasting Portfolio Project</h1>
+              <p>Explore the fundamentals of 3D rendering with raycasting and SDL2.</p>
+              <button onclick="window.location.href='http://your-deployed-app-url.com'">Go to App</button>
+            </div>
+            <div class="coverpic">
+              <img src="The_Maze.png" alt="Cover Image">
+            </div>
+        </section>
     </header>
-    <section id="intro">
-        <img src="The_Maze.png" alt="Cover Image">
-        <h1>THE MAZE - Raycasting Portfolio Project</h1>
-        <p>Explore the fundamentals of 3D rendering with raycasting and SDL2.</p>
-        <button onclick="window.location.href='http://your-deployed-app-url.com'">Go to App</button>
-    </section>
+
     <section id="features">
         <h2>Key Features</h2>
         <div class="feature">
+            <h3>Walls Rendering</h3>
+            <p>in the Game, windows will be created using SDL2
+              and raycasting is employed to render walls.
+              This forms the backbone of the 3D rendering process,
+               simulating depth and perspective within a 2D environment.</p>
             <img src="Walls.png" alt="Walls Feature">
-            <h3>Walls</h3>
-            <p>Create a window with SDL2 and use raycasting to draw walls on your window.</p>
         </div>
         <div class="feature">
+            <h3>Wall Orientation</h3>
+            <p>Differentiate wall colors based on their orientation (NORTH, SOUTH, EAST, WEST). This helps in distinguishing the direction of walls, enhancing spatial awareness and navigation within the rendered environment.</p>
             <img src="Orientation.png" alt="Orientation Feature">
-            <h3>Orientation</h3>
-            <p>Draw walls in different colors based on their orientation (NORTH, SOUTH, EAST, WEST).</p>
         </div>
         <div class="feature">
+            <h3>Camera Rotation</h3>
+            <p>Implement smooth camera rotation using keyboard or mouse inputs, allowing players to look around the environment. This feature mimics the experience of first-person perspective in 3D games.</p>
             <img src="Rotation.png" alt="Rotation Feature">
-            <h3>Rotation</h3>
-            <p>Provide a way to rotate the camera during execution using keyboard or mouse inputs.</p>
         </div>
         <div class="feature">
-            <img src="rotation.gif" alt="Movement Feature">
-            <h3>Movement</h3>
-            <p>Allow the player to move the camera using w, a, s, d keys and handle wall collisions.</p>
+            <h3>Player Movement</h3>
+            <p>Enable player movement using standard gaming controls (W, A, S, D keys). This feature supports forward, backward, and sideways movement, providing a dynamic and interactive experience.</p>
+            <img src="rotation.png" alt="Movement Feature">
         </div>
+        <div class="feature">
+            <img src="images/collision-feature.gif" alt="Collision Detection">
+            <h3>Collision Detection</h3>
+            <p>Prevent the player from walking through walls with robust collision detection. The player can slide along walls, ensuring realistic movement and interaction within the game environment.</p>
+        </div>
+
     </section>
     <section id="about">
         <h2>About This Project</h2>
-        <p>This project was inspired by the classic 3D rendering techniques used in early video games like Wolfenstein 3D.
-		 It is a portfolio project for alx fullstack engineering program, showcasing the basics of raycasting and SDL2 for rendering 3D environments.</p>
-		 The project is ment to higligth all the skills gained in this course so far.
-		 <p>The Game is set around a player who tries to get his way out of a maze built with  texture brick, all the while avoiding obstacles that have been set in its path. </p>
-		 <p>Here, you can create an account so that you can save your progress and access it from any device. Update your profile information so that you can personalize my gaming experience.
-			and save your game progress so that you can continue from where I left off at a later time.
-		</p>
-		<ul>
-            <li><a href="https://www.linkedin.com/in/chika-ugonna-okafor">LinkedIn</a></li>
-            <li><a href="https://github.com/chi-ka/">GitHub</a></li>
+        <p>This project was inspired by the classic 3D rendering techniques used in early video games like Wolfenstein 3D. It is a portfolio project for Holberton School, showcasing the basics of raycasting and SDL2 for rendering 3D environments.</p>
+        <p><a href="https://github.com/your-repo">GitHub Repository</a></p>
+
+        <ul class="social-links">
+                   <li><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                   <li><a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a></li>
+                   <li><a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i></a></li>
         </ul>
-        <p><a href="https://github.com/chi-ka/Maze-project/">GitHub Repository</a></p>
     </section>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
